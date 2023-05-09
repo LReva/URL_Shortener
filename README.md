@@ -24,10 +24,9 @@ Getting started:
 5. Create a .env file in the root directory of your project and add your project's environment variables:
   SECRET_KEY = django-secret-key-here
 6. Create a new database with the name url_db:
-  psql postgres
+  psql postgres;
   CREATE DATABASE url_db;
 7. Apply the migrations:
-  python manage.py makemigrations
   python manage.py migrate
 
 
