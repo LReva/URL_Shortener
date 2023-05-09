@@ -1,0 +1,13 @@
+.welcome-div{
+  margin-top: 2em;
+  text-align: center;
+}
+
+.input-div{
+  margin-top: 3em;
+  margin-left:1em;
+}
+
+.input-div > * {
+  margin-top: 1em;
+}
