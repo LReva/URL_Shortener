@@ -9,7 +9,6 @@ def home_view(request):
     return render(request, 'home.html') 
 
 
-@csrf_exempt
 def encode(request):
     if request.method == 'POST':
         long_url = request.POST.get('url')
@@ -41,7 +40,6 @@ def encode(request):
         return JsonResponse({"error": "Invalid request"})
 
 
-@csrf_exempt
 def decode(request):
     if request.method == 'POST':
         short_url = request.POST.get('url')
